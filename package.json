@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "logzio-nodejs": "^1.0.7"
+  }
+}
