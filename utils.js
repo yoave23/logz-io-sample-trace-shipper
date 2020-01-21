@@ -2,31 +2,34 @@ const { createInterface } = require('readline');
 const { readFile } = require('fs');
 
 const getTokenFromConsole = () => {
-  if (process.argv.length === 3) {
-    return process.argv[2];
-  }
-
-  const rl = createInterface({
-    input: process.stdin,
-    output: process.stdout,
-    prompt: 'Enter token: '
-  });
-
-  rl.prompt();
-
-  rl.on('line', async (line) => {
-    const token = line.trim();
-    if (!token) {
-      console.log('empty token');
-      rl.prompt();
-    } else {
-      rl.close();
-      //load(token);
-      return token;
+  return new Promise((resolve, reject) => {
+    if (process.argv.length === 3) {
+      resolve(process.argv[2]);
     }
-  }).on('close', () => {
-    // process.exit(0);
-  });
+
+    const rl = createInterface({
+      input: process.stdin,
+      output: process.stdout,
+      prompt: 'Enter token: '
+    });
+
+    rl.prompt();
+
+    rl.on('line', async (line) => {
+      const token = line.trim();
+      if (!token) {
+        console.log('empty token');
+        rl.prompt();
+      } else {
+        rl.close();
+        //load(token);
+        resolve(token);
+      }
+    }).on('close', () => {
+      // process.exit(0);
+    });
+  })
+
 }
 
 const getTraces = () => {

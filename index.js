@@ -2,7 +2,7 @@ const { getTokenFromConsole, getTraces, send } = require('./utils');
 const { parseTraces } = require('./traces-utils');
 
 (async () => {
-  const token = getTokenFromConsole();
+  const token = await getTokenFromConsole();
   console.log('token is:', token);
   if (!token) {
     process.exit(0);
