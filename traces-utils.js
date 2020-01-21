@@ -12,7 +12,8 @@ const addDays = date => {
 
   const result = new Date(parseInt(dateStr));
   const diff = getDaysBetween(result, new Date());
-  result.setDate(result.getDate() + diff - 1);
+  result.setDate(result.getDate() + diff);
+  result.setHours(new Date().getHours());
   let time = result.getTime();
 
   if (isLongDate) {
