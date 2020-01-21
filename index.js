@@ -15,5 +15,3 @@ const { parseTraces } = require('./traces-utils');
   await send(parsedTraces, token);
   console.log('done');
 })();
-
-
