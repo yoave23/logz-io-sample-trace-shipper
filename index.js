@@ -1,11 +1,8 @@
-const { getTokenFromConsole, send, getTokenFromUser } = require('./utils');
-const { parseTraces } = require('./traces-utils');
+const { send, getTokenFromUser } = require('./utils');
 const { generateTraces } = require('./traces-utils');
 
-
-
 (async () => {
-  const token = getTokenFromConsole();
+  const token = await getTokenFromUser();
   if (!token) {
     console.log('no token');
 
@@ -13,10 +10,8 @@ const { generateTraces } = require('./traces-utils');
   }
 
   console.log(`loading with token ${token}`);
-  // const traces = await getTraces();
   const traces = generateTraces();
 
-  // const parsedTraces = parseTraces(traces);
   console.log('traces', traces);
 
   await send(traces, token);

@@ -1,4 +1,3 @@
-// const { operation1, operation2, operation3, data } = require('./traces');
 const { span1, span2, span3, span4, operation1, operation2 } = require('./data1-complete');
 
 const generateTraces = () => {
@@ -24,26 +23,3 @@ const generateTraces = () => {
 };
 
 module.exports = { generateTraces };
-
-  // const trace1Time = new Date().getTime();
-  // const trace1 = data[0];
-  // trace1.startTimeMillis = trace1['@timestamp'] = trace1Time;
-  // trace1.startTime = parseInt(`${trace1Time}000`, 10);
-
-  // // add 200 milliseconds
-  // const trace2Time = trace1Time + 10;
-  // const trace2 = data[1];
-  // trace2.startTimeMillis = trace2['@timestamp'] = trace2Time;
-  // trace2.startTime = parseInt(`${trace2Time}000`, 10);
-
-  // const trace3Time = new Date().getTime();
-  // const trace3 = data[2];
-  // trace3.startTimeMillis = trace3['@timestamp'] = trace3Time;
-  // trace3.startTime = parseInt(`${trace3Time}000`, 10);
-
-  // const trace4Time = trace3Time + 15;
-  // const trace4 = data[3];
-  // trace4.startTimeMillis = trace4['@timestamp'] = trace4Time;
-  // trace4.startTime = parseInt(`${trace4Time}000`, 10);
-
-  // return [operation1, operation2, trace1, trace2, trace3, trace4].map(body => ({ amount: 1, body }));

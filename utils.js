@@ -31,7 +31,7 @@ const send = (traces = [], token) => {
     console.log('sending traces');
     const logger = require('logzio-nodejs').createLogger({
       token,
-      host: '172.31.0.6',
+      host: '172.31.66.132',
       debug: true,
       type: 'nodejs'
     });
@@ -57,10 +57,7 @@ const getTokenFromUser = () => {
       output: process.stdout
     });
 
-    rl.question('What do you think of Node.js? ', (answer) => {
-      // TODO: Log the answer in a database
-      //console.log(`Thank you for your valuable feedback: ${answer}`);
-
+    rl.question('Token please:', (answer) => {
       rl.close();
 
       resolve(answer);
