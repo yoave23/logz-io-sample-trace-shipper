@@ -2,12 +2,19 @@ const { readFile } = require('fs');
 const path = require('path');
 const readline = require('readline');
 
-const getTokenFromConsole = () => {
-  if (process.argv.length === 3) {
-    return process.argv[2];
-  }
+const getTokenFromUser = () => {
+  return new Promise((resolve, reject) => {
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
 
-  throw new Error('missing token');
+    rl.question('Token please:', (answer) => {
+      rl.close();
+
+      resolve(answer);
+    });
+  });
 };
 
 const getTraces = () => {
@@ -31,7 +38,7 @@ const send = (traces = [], token) => {
     console.log('sending traces');
     const logger = require('logzio-nodejs').createLogger({
       token,
-      host: '172.31.66.132',
+      host: 'localhost',
       debug: true,
       type: 'nodejs'
     });
@@ -50,19 +57,4 @@ const send = (traces = [], token) => {
   });
 };
 
-const getTokenFromUser = () => {
-  return new Promise((resolve, reject) => {
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-
-    rl.question('Token please:', (answer) => {
-      rl.close();
-
-      resolve(answer);
-    });
-  });
-};
-
-module.exports = { getTokenFromConsole, getTokenFromUser, getTraces, send };
+module.exports = { getTokenFromUser, getTraces, send };
