@@ -1,0 +1,3655 @@
+[
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638053,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "552977ad0b17a204",
+    "duration": 48237,
+    "startTime": 1619958638053518,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=289%2C833"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "381050e394e38ae7",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638053,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "1879b607269228fa",
+    "duration": 47704,
+    "startTime": 1619958638053716,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=289%2C833",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958638053730
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "552977ad0b17a204",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638053,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "381050e394e38ae7",
+    "duration": 48224,
+    "startTime": 1619958638053527,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638053548
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638053555
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638053597
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638053600
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638101593
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638101652
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638101749
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "36a85e034bfde0dd",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638023,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "4dba9fef283b2787",
+    "duration": 47786,
+    "startTime": 1619958638023481,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638023499
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638023505
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638023521
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638023524
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638071230
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638071255
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638071266
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638023,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "36a85e034bfde0dd",
+    "duration": 47796,
+    "startTime": 1619958638023473,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=91%2C902"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "4dba9fef283b2787",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638023,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "4ebe32995762c3ca",
+    "duration": 47518,
+    "startTime": 1619958638023591,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=91%2C902",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958638023604
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "41e312796f89695e",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638015,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "7f6722c56c1e1e6a",
+    "duration": 55864,
+    "startTime": 1619958638015079,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638015097
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638015102
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638015118
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638015120
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638070847
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638070912
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638070942
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638015,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "41e312796f89695e",
+    "duration": 55894,
+    "startTime": 1619958638015072,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=975%2C820"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "7f6722c56c1e1e6a",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638015,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "5ddd1d05a6871c9d",
+    "duration": 55487,
+    "startTime": 1619958638015195,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=975%2C820",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958638015206
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638011,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "39c0543672a5b436",
+    "duration": 41641,
+    "startTime": 1619958638011777,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=939%2C289"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "366d17a8611c2023",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638011,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "58955acbede08ae4",
+    "duration": 41189,
+    "startTime": 1619958638011967,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=939%2C289",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958638011981
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "39c0543672a5b436",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958638011,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "366d17a8611c2023",
+    "duration": 41621,
+    "startTime": 1619958638011786,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638011834
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638011841
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638011865
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638011869
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638053319
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638053375
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638053405
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "460bfddf00c18ae5",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637954,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "7ae6064180d5996e",
+    "duration": 57632,
+    "startTime": 1619958637954004,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637954028
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637954035
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637954051
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637954053
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638011545
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638011601
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638011634
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=310%2C136"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "7ae6064180d5996e",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637954,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "686d2fec55ec1585",
+    "duration": 57220,
+    "startTime": 1619958637954118,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=310%2C136",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958637954128
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=342%2C17"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "75d6c603ad06d08a",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637953,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "22886d6f389b909c",
+    "duration": 69383,
+    "startTime": 1619958637953816,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=342%2C17",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958637953826
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637953,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "460bfddf00c18ae5",
+    "duration": 57650,
+    "startTime": 1619958637953987,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "1745e5e97b931820",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637953,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "75d6c603ad06d08a",
+    "duration": 69693,
+    "startTime": 1619958637953700,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953718
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953724
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953740
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953743
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638023344
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638023376
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638023391
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637953,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "1745e5e97b931820",
+    "duration": 69702,
+    "startTime": 1619958637953693,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "536f23408fc869cb",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637952,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "3f2a14c054c459e2",
+    "duration": 62587,
+    "startTime": 1619958637952410,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637952433
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637952439
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637952592
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637952595
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638014950
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638014982
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958638014996
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637952,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "536f23408fc869cb",
+    "duration": 62599,
+    "startTime": 1619958637952400,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=182%2C798"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "3f2a14c054c459e2",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637952,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "17b59a52cf982951",
+    "duration": 62157,
+    "startTime": 1619958637952690,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=182%2C798",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958637952710
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "37c28dae5b067085",
+    "duration": 52174,
+    "startTime": 1619958637900144,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=304%2C218"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "42659809d80f95b3",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "7c94f6a66589f86d",
+    "duration": 51572,
+    "startTime": 1619958637900485,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=304%2C218",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958637900499
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=919%2C554"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "15a9f3d2ae96c8e5",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "1c340b1799d2bc42",
+    "duration": 52801,
+    "startTime": 1619958637900907,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=919%2C554",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958637900932
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "49f67099cde79103",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "4bba69dcac99e835",
+    "duration": 53216,
+    "startTime": 1619958637900298,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900313
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900319
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900334
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900337
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953468
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953499
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953513
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": false,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": false,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "402e77131fda0713",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "15a9f3d2ae96c8e5",
+    "duration": 53539,
+    "startTime": 1619958637900390,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900402
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ConnectStart",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "tcp",
+            "key": "network"
+          },
+          {
+            "type": "string",
+            "value": "0.0.0.0:8083",
+            "key": "addr"
+          }
+        ],
+        "timestamp": 1619958637900657
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ConnectDone",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "tcp",
+            "key": "network"
+          },
+          {
+            "type": "string",
+            "value": "0.0.0.0:8083",
+            "key": "addr"
+          }
+        ],
+        "timestamp": 1619958637900786
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900804
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900838
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900840
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953840
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953883
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637953926
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": true,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": true,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8083"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "37c28dae5b067085",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "42659809d80f95b3",
+    "duration": 52153,
+    "startTime": 1619958637900153,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900177
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900185
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900208
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637900211
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637952218
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637952275
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637952305
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "402e77131fda0713",
+    "duration": 53548,
+    "startTime": 1619958637900384,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/route?dropoff=115%2C277&pickup=874%2C192"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "7285c289c906cbba"
+      },
+      "serviceName": "route",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "4bba69dcac99e835",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "c74f4a59a9101d4",
+    "duration": 52786,
+    "startTime": 1619958637900567,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/route?dropoff=115%2C277&pickup=874%2C192",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958637900576
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637900,
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "49f67099cde79103",
+    "duration": 53224,
+    "startTime": 1619958637900293,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T799373C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637889,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "783dc875034c2a1f",
+    "duration": 9600,
+    "startTime": 1619958637889995,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T722192C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637882,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "18a60e4ab396153c",
+    "duration": 7189,
+    "startTime": 1619958637882795,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T757660C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637870,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "4aee0055957ffef3",
+    "duration": 12105,
+    "startTime": 1619958637870667,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T794725C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637866,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "25ce2d613d37c22f",
+    "duration": 4216,
+    "startTime": 1619958637866426,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "error": true,
+      "internal@span@format": "proto",
+      "param@driverID": "T794725C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637835,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "5ba76517727af1f5",
+    "duration": 30445,
+    "startTime": 1619958637835951,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "redis timeout",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "error",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "T794725C",
+            "key": "driver_id"
+          },
+          {
+            "type": "string",
+            "value": "redis timeout",
+            "key": "error"
+          }
+        ],
+        "timestamp": 1619958637866354
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T757494C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637823,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "3abcbe8b99df8bd5",
+    "duration": 12709,
+    "startTime": 1619958637823229,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T772836C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637810,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "587bbdfcd84c19fe",
+    "duration": 12239,
+    "startTime": 1619958637810980,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T730958C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637800,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "4a97b4685d78203d",
+    "duration": 10200,
+    "startTime": 1619958637800760,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T755571C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637790,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "67f27c977cfc10d1",
+    "duration": 10313,
+    "startTime": 1619958637790434,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "error": true,
+      "internal@span@format": "proto",
+      "param@driverID": "T755571C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637760,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "52fa7fbd29b8447a",
+    "duration": 29951,
+    "startTime": 1619958637760452,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "redis timeout",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "error",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "T755571C",
+            "key": "driver_id"
+          },
+          {
+            "type": "string",
+            "value": "redis timeout",
+            "key": "error"
+          }
+        ],
+        "timestamp": 1619958637790355
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T701652C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637751,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "6c2f37218f39324b",
+    "duration": 8590,
+    "startTime": 1619958637751842,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "internal@span@format": "proto",
+      "param@driverID": "T763619C"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637745,
+    "flags": 1,
+    "operationName": "GetDriver",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "565798997e53eb8f",
+    "duration": 5834,
+    "startTime": 1619958637745989,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "peer@port": 54382,
+      "span@kind": "server",
+      "as": "thrift",
+      "peer@service": "driver-client",
+      "internal@span@format": "proto",
+      "peer@ipv4": 2130706433
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "2b887da86bfe1839"
+      },
+      "serviceName": "driver",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "7e019fadc76cff4",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637732,
+    "flags": 1,
+    "operationName": "Driver::findNearest",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "59ba3802a657f10b",
+    "duration": 167099,
+    "startTime": 1619958637732598,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "baggage",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "customer",
+            "key": "key"
+          },
+          {
+            "type": "string",
+            "value": "Rachel's Floral Designs",
+            "key": "value"
+          }
+        ],
+        "timestamp": 1619958637732686
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Searching for nearby drivers",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "location"
+          }
+        ],
+        "timestamp": 1619958637732708
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Retrying GetDriver after error",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "error",
+            "key": "level"
+          },
+          {
+            "type": "int64",
+            "value": "1",
+            "key": "retry_no"
+          },
+          {
+            "type": "string",
+            "value": "redis timeout",
+            "key": "error"
+          }
+        ],
+        "timestamp": 1619958637790417
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Retrying GetDriver after error",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "error",
+            "key": "level"
+          },
+          {
+            "type": "int64",
+            "value": "1",
+            "key": "retry_no"
+          },
+          {
+            "type": "string",
+            "value": "redis timeout",
+            "key": "error"
+          }
+        ],
+        "timestamp": 1619958637866409
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Search successful",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "int64",
+            "value": "10",
+            "key": "num_drivers"
+          }
+        ],
+        "timestamp": 1619958637899612
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "span@kind": "client",
+      "param@location": "115,277",
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "75aa51db3c6ed0"
+      },
+      "serviceName": "redis",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "59ba3802a657f10b",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637732,
+    "flags": 1,
+    "operationName": "FindDriverIDs",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "766fd77827564bfe",
+    "duration": 13239,
+    "startTime": 1619958637732738,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Found drivers",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          }
+        ],
+        "timestamp": 1619958637745938
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "peer@port": 8082,
+      "span@kind": "client",
+      "as": "thrift",
+      "peer@service": "driver",
+      "peer@ipv6": "::",
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958637732,
+    "flags": 1,
+    "operationName": "Driver::findNearest",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "7e019fadc76cff4",
+    "duration": 167451,
+    "startTime": 1619958637732466,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "span@kind": "server",
+      "component": "net/http",
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/customer?customer=123"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "6cd9988852e91fba"
+      },
+      "serviceName": "customer",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "4a009af1f5ea0e8e",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958636558,
+    "flags": 1,
+    "operationName": "HTTP GET /customer",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "7c80a9206bcffca6",
+    "duration": 1173999,
+    "startTime": 1619958636558168,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/customer?customer=123",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958636558198
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Loading customer",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "123",
+            "key": "customer_id"
+          }
+        ],
+        "timestamp": 1619958636558217
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "request": "",
+      "span@kind": "client",
+      "peer@service": "mysql",
+      "internal@span@format": "proto",
+      "sql@query": "SELECT * FROM customer WHERE customer_id=123"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "12e92276d102f189"
+      },
+      "serviceName": "mysql",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "7c80a9206bcffca6",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958636558,
+    "flags": 1,
+    "operationName": "SQL SELECT",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "67d378ce0723afa",
+    "duration": 1173924,
+    "startTime": 1619958636558227,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Waiting for lock behind 3 transactions",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "[  ]",
+            "key": "blockers"
+          }
+        ],
+        "timestamp": 1619958636558236
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Acquired lock with 11 transactions waiting behind",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637465548
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "internal@span@format": "proto"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "14a7d90df3dc5fa0",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958636557,
+    "flags": 1,
+    "operationName": "HTTP GET: /customer",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "27d3ec6f52c783fa",
+    "duration": 1174518,
+    "startTime": 1619958636557857,
+    "logs": []
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "sampler@type": "const",
+      "span@kind": "server",
+      "component": "net/http",
+      "sampler@param": true,
+      "http@method": "GET",
+      "internal@span@format": "proto",
+      "http@url": "/dispatch?customer=123"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [],
+    "startTimeMillis": 1619958636557,
+    "flags": 1,
+    "operationName": "HTTP GET /dispatch",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "14a7d90df3dc5fa0",
+    "duration": 1544081,
+    "startTime": 1619958636557772,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "HTTP request received",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "GET",
+            "key": "method"
+          },
+          {
+            "type": "string",
+            "value": "/dispatch?customer=123",
+            "key": "url"
+          }
+        ],
+        "timestamp": 1619958636557792
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Getting customer",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "123",
+            "key": "customer_id"
+          }
+        ],
+        "timestamp": 1619958636557834
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Found customer",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          }
+        ],
+        "timestamp": 1619958637732395
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "baggage",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "customer",
+            "key": "key"
+          },
+          {
+            "type": "string",
+            "value": "Rachel's Floral Designs",
+            "key": "value"
+          }
+        ],
+        "timestamp": 1619958637732429
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding nearest drivers",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "location"
+          }
+        ],
+        "timestamp": 1619958637732433
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Found drivers",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          }
+        ],
+        "timestamp": 1619958637899934
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "304,218",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958637900019
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "874,192",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958637900052
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "919,554",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958637900083
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "182,798",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958637952329
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "342,17",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958637953524
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "310,136",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958637953939
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "939,289",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958638011656
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "975,820",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958638015007
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "91,902",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958638023403
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Finding route",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "289,833",
+            "key": "pickup"
+          },
+          {
+            "type": "string",
+            "value": "115,277",
+            "key": "dropoff"
+          }
+        ],
+        "timestamp": 1619958638053427
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Found routes",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          }
+        ],
+        "timestamp": 1619958638101767
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "Dispatch successful",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "info",
+            "key": "level"
+          },
+          {
+            "type": "string",
+            "value": "T701652C",
+            "key": "driver"
+          },
+          {
+            "type": "string",
+            "value": "2m0s",
+            "key": "eta"
+          }
+        ],
+        "timestamp": 1619958638101829
+      }
+    ]
+  },
+  {
+    "traceID": "14a7d90df3dc5fa0",
+    "JaegerTag": {
+      "http@status_code": 200,
+      "net/http@reused": false,
+      "span@kind": "client",
+      "component": "net/http",
+      "http@method": "GET",
+      "net/http@was_idle": false,
+      "internal@span@format": "proto",
+      "http@url": "0.0.0.0:8081"
+    },
+    "process": {
+      "tag": {
+        "hostname": "5b66efc8971b",
+        "jaeger@version": "Go-2.15.1dev",
+        "ip": "172.18.0.3",
+        "client-uuid": "4d127e874c6d3027"
+      },
+      "serviceName": "frontend",
+      "tags": []
+    },
+    "references": [
+      {
+        "traceID": "14a7d90df3dc5fa0",
+        "spanID": "27d3ec6f52c783fa",
+        "refType": "CHILD_OF"
+      }
+    ],
+    "startTimeMillis": 1619958636557,
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "type": "jaegerSpan",
+    "tags": [
+      "_logz_http_bulk_json_8070"
+    ],
+    "spanID": "4a009af1f5ea0e8e",
+    "duration": 1174487,
+    "startTime": 1619958636557886,
+    "logs": [
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GetConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958636557899
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ConnectStart",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "tcp",
+            "key": "network"
+          },
+          {
+            "type": "string",
+            "value": "0.0.0.0:8081",
+            "key": "addr"
+          }
+        ],
+        "timestamp": 1619958636557933
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ConnectDone",
+            "key": "event"
+          },
+          {
+            "type": "string",
+            "value": "tcp",
+            "key": "network"
+          },
+          {
+            "type": "string",
+            "value": "0.0.0.0:8081",
+            "key": "addr"
+          }
+        ],
+        "timestamp": 1619958636558011
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958636558032
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteHeaders",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958636558058
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "WroteRequest",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958636558061
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "GotFirstResponseByte",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637732298
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "PutIdleConn",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637732319
+      },
+      {
+        "fields": [
+          {
+            "type": "string",
+            "value": "ClosedBody",
+            "key": "event"
+          }
+        ],
+        "timestamp": 1619958637732370
+      }
+    ]
+  }
+]

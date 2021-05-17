@@ -1,0 +1,3874 @@
+[
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "460a0d9fe26bbc01",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926470782,
+    "duration": 11973,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T751970C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "367005da4eaed87a",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "22f01bdefe00c7b6"
+      }
+    ],
+    "startTime": 1619955926177202,
+    "duration": 267700,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8081"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926177223,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926177231,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926177264,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926177267,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926444799,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926444876,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926444901,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "33323a922115fe82",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "15d3b05d8a3d89c7"
+      }
+    ],
+    "startTime": 1619955926631545,
+    "duration": 46004,
+    "tags": [
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926631572,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631580,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631603,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631606,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926677464,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926677519,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926677547,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "241869264818a226",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926631685,
+    "duration": 36545,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "651a761d8582def0",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926766632,
+    "duration": 54212,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "7504da1294f9fafc",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "2c064acb0f1197f2"
+      }
+    ],
+    "startTime": 1619955926736524,
+    "duration": 38132,
+    "tags": [
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=768%2C456"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926736538,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=768%2C456"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "75d7c0ab7490754a",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926666220,
+    "duration": 54509,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "06a2aadb2d5cf26d",
+    "flags": 1,
+    "operationName": "Driver::findNearest",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "58537646dc446959"
+      }
+    ],
+    "startTime": 1619955926445303,
+    "duration": 185815,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "peer.ipv4",
+        "type": "string",
+        "value": "127.0.0.1"
+      },
+      {
+        "key": "peer.port",
+        "type": "int64",
+        "value": 54382
+      },
+      {
+        "key": "peer.service",
+        "type": "string",
+        "value": "driver-client"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "as",
+        "type": "string",
+        "value": "thrift"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926445379,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "baggage"
+          },
+          {
+            "key": "key",
+            "type": "string",
+            "value": "customer"
+          },
+          {
+            "key": "value",
+            "type": "string",
+            "value": "Amazing Coffee Roasters"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926445401,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Searching for nearby drivers"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "location",
+            "type": "string",
+            "value": "211,653"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926513039,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Retrying GetDriver after error"
+          },
+          {
+            "key": "error",
+            "type": "string",
+            "value": "redis timeout"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "error"
+          },
+          {
+            "key": "retry_no",
+            "type": "int64",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926589277,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Retrying GetDriver after error"
+          },
+          {
+            "key": "error",
+            "type": "string",
+            "value": "redis timeout"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "error"
+          },
+          {
+            "key": "retry_no",
+            "type": "int64",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926630999,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Search successful"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "num_drivers",
+            "type": "int64",
+            "value": 10
+          }
+        ]
+      }
+    ],
+    "processID": "p4",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "5a2d9d7268b49c8b",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "2aa3a3104cfc937b"
+      }
+    ],
+    "startTime": 1619955926677836,
+    "duration": 57991,
+    "tags": [
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=281%2C851"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926677849,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=281%2C851"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "22f01bdefe00c7b6",
+    "flags": 1,
+    "operationName": "HTTP GET: /customer",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926177177,
+    "duration": 267735,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "2776e76ff865f357",
+    "flags": 1,
+    "operationName": "FindDriverIDs",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926445432,
+    "duration": 17999,
+    "tags": [
+      {
+        "key": "param.location",
+        "type": "string",
+        "value": "211,653"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926463387,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Found drivers"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          }
+        ]
+      }
+    ],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "3dc1888c34cee49e",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926589463,
+    "duration": 10114,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T743795C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "08658b7d249a88a9",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "75d7c0ab7490754a"
+      }
+    ],
+    "startTime": 1619955926666229,
+    "duration": 54490,
+    "tags": [
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926666254,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926666260,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926666297,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926666300,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926720653,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926720694,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926720718,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "4b5c52cba10fdc72",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926677644,
+    "duration": 58464,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "6ba0a1eb244d92ba",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "6d71ad742fe641bb"
+      }
+    ],
+    "startTime": 1619955926721046,
+    "duration": 58667,
+    "tags": [
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=551%2C588"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926721060,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=551%2C588"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "6d71ad742fe641bb",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "25f5eda24eee718c"
+      }
+    ],
+    "startTime": 1619955926720881,
+    "duration": 59092,
+    "tags": [
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926720901,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926720908,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926720924,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926720927,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926779870,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926779947,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926779971,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "4172439894837d1e",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "28774e2105338dc9"
+      }
+    ],
+    "startTime": 1619955926668295,
+    "duration": 48941,
+    "tags": [
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926668331,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926668337,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926668353,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926668356,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926717169,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926717214,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926717235,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "28774e2105338dc9",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926668289,
+    "duration": 48951,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "56b3af372afed4fe",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "641c05f544e1e7fe"
+      }
+    ],
+    "startTime": 1619955926631778,
+    "duration": 34293,
+    "tags": [
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": false
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": false
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926631826,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631879,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ConnectStart"
+          },
+          {
+            "key": "addr",
+            "type": "string",
+            "value": "0.0.0.0:8083"
+          },
+          {
+            "key": "network",
+            "type": "string",
+            "value": "tcp"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926632112,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ConnectDone"
+          },
+          {
+            "key": "addr",
+            "type": "string",
+            "value": "0.0.0.0:8083"
+          },
+          {
+            "key": "network",
+            "type": "string",
+            "value": "tcp"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926632137,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926632266,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926632269,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926665971,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926666038,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926666068,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "15d3b05d8a3d89c7",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926631503,
+    "duration": 46057,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "05a7e44fe5a5ca41",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926482766,
+    "duration": 30263,
+    "tags": [
+      {
+        "key": "error",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T724206C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926512968,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "redis timeout"
+          },
+          {
+            "key": "driver_id",
+            "type": "string",
+            "value": "T724206C"
+          },
+          {
+            "key": "error",
+            "type": "string",
+            "value": "redis timeout"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "error"
+          }
+        ]
+      }
+    ],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "2aa3a3104cfc937b",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "4b5c52cba10fdc72"
+      }
+    ],
+    "startTime": 1619955926677652,
+    "duration": 58446,
+    "tags": [
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926677695,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926677701,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926677725,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926677728,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926736010,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926736069,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926736096,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "45f61f88daa213cf",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "29e7edbbf262a6be"
+      }
+    ],
+    "startTime": 1619955926766856,
+    "duration": 53728,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=357%2C987"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926766870,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=357%2C987"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "360f2410d07d4c63",
+    "flags": 1,
+    "operationName": "SQL SELECT",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "5364ded395dfe406"
+      }
+    ],
+    "startTime": 1619955926177414,
+    "duration": 267199,
+    "tags": [
+      {
+        "key": "sql.query",
+        "type": "string",
+        "value": "SELECT * FROM customer WHERE customer_id=567"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "peer.service",
+        "type": "string",
+        "value": "mysql"
+      },
+      {
+        "key": "request",
+        "type": "string",
+        "value": ""
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926177494,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Acquired lock with 0 transactions waiting behind"
+          }
+        ]
+      }
+    ],
+    "processID": "p5",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "56ed5c4340072de9",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "08658b7d249a88a9"
+      }
+    ],
+    "startTime": 1619955926666434,
+    "duration": 54086,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=837%2C740"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926666448,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=837%2C740"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "30f281f0359f2c1f",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "25429aab0018561a"
+      }
+    ],
+    "startTime": 1619955926631976,
+    "duration": 36110,
+    "tags": [
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=442%2C996"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926631990,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=442%2C996"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "005c5026c69b7ca0",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926599590,
+    "duration": 10533,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T751942C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "66ea03f9e3aa26eb",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926463447,
+    "duration": 7323,
+    "tags": [
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T753606C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "4a61da11e764465f",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926610144,
+    "duration": 10440,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T724727C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "2c064acb0f1197f2",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "08da3c4b222c575d"
+      }
+    ],
+    "startTime": 1619955926736372,
+    "duration": 38519,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926736396,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926736403,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926736435,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926736439,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926774807,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926774859,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926774889,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "741aa6582db7baf5",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926536226,
+    "duration": 12110,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T700708C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "641c05f544e1e7fe",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926631771,
+    "duration": 34311,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "1c7f074c87afb51c",
+    "flags": 1,
+    "operationName": "HTTP GET /dispatch",
+    "references": [],
+    "startTime": 1619955926176857,
+    "duration": 644247,
+    "tags": [
+      {
+        "key": "sampler.type",
+        "type": "string",
+        "value": "const"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/dispatch?customer=567"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "sampler.param",
+        "type": "bool",
+        "value": true
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926176910,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/dispatch?customer=567"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926176958,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Getting customer"
+          },
+          {
+            "key": "customer_id",
+            "type": "string",
+            "value": "567"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926444920,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Found customer"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926444967,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "baggage"
+          },
+          {
+            "key": "key",
+            "type": "string",
+            "value": "customer"
+          },
+          {
+            "key": "value",
+            "type": "string",
+            "value": "Amazing Coffee Roasters"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926444972,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding nearest drivers"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "location",
+            "type": "string",
+            "value": "211,653"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631411,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Found drivers"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631463,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "694,192"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631593,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "442,996"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631730,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "523,676"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926666093,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "837,740"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926668236,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "340,276"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926677568,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "281,851"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926717250,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "849,626"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926720737,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "551,588"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926736118,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "768,456"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926766547,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Finding route"
+          },
+          {
+            "key": "dropoff",
+            "type": "string",
+            "value": "211,653"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "pickup",
+            "type": "string",
+            "value": "357,987"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926820855,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Found routes"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926820968,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Dispatch successful"
+          },
+          {
+            "key": "driver",
+            "type": "string",
+            "value": "T753606C"
+          },
+          {
+            "key": "eta",
+            "type": "string",
+            "value": "2m0s"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "25429aab0018561a",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "241869264818a226"
+      }
+    ],
+    "startTime": 1619955926631706,
+    "duration": 36521,
+    "tags": [
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926631726,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631733,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631751,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926631847,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926668188,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926668214,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926668226,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "5b5b5015124d57da",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "56b3af372afed4fe"
+      }
+    ],
+    "startTime": 1619955926632318,
+    "duration": 33434,
+    "tags": [
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=523%2C676"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926632344,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=523%2C676"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "5b33862b1d502556",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926513057,
+    "duration": 11364,
+    "tags": [
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T724206C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "14440b5a351e8976",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "0623c227162a1e29"
+      }
+    ],
+    "startTime": 1619955926717561,
+    "duration": 48704,
+    "tags": [
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=849%2C626"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926717577,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=849%2C626"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "08da3c4b222c575d",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926736362,
+    "duration": 38544,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "58537646dc446959",
+    "flags": 1,
+    "operationName": "Driver::findNearest",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926445008,
+    "duration": 186345,
+    "tags": [
+      {
+        "key": "peer.port",
+        "type": "int64",
+        "value": 8082
+      },
+      {
+        "key": "peer.service",
+        "type": "string",
+        "value": "driver"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "as",
+        "type": "string",
+        "value": "thrift"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "peer.ipv6",
+        "type": "string",
+        "value": "::"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "73d428b0a4ad7dba",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926620596,
+    "duration": 10378,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T716965C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "25f5eda24eee718c",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926720873,
+    "duration": 59110,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "4b5a12880c4ad360",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926558270,
+    "duration": 30963,
+    "tags": [
+      {
+        "key": "error",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T743795C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926589171,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "redis timeout"
+          },
+          {
+            "key": "driver_id",
+            "type": "string",
+            "value": "T743795C"
+          },
+          {
+            "key": "error",
+            "type": "string",
+            "value": "redis timeout"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "error"
+          }
+        ]
+      }
+    ],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "2314e9db4df7ccac",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926548359,
+    "duration": 9895,
+    "tags": [
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T772504C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "0623c227162a1e29",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "2213f75ac487340b"
+      }
+    ],
+    "startTime": 1619955926717344,
+    "duration": 49181,
+    "tags": [
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926717369,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926717408,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926717428,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926717432,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926766429,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926766493,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926766524,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "2213f75ac487340b",
+    "flags": 1,
+    "operationName": "HTTP GET: /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "1c7f074c87afb51c"
+      }
+    ],
+    "startTime": 1619955926717325,
+    "duration": 49212,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "5364ded395dfe406",
+    "flags": 1,
+    "operationName": "HTTP GET /customer",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "367005da4eaed87a"
+      }
+    ],
+    "startTime": 1619955926177360,
+    "duration": 267281,
+    "tags": [
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/customer?customer=567"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926177374,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/customer?customer=567"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926177402,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "Loading customer"
+          },
+          {
+            "key": "customer_id",
+            "type": "string",
+            "value": "567"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          }
+        ]
+      }
+    ],
+    "processID": "p6",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "29e7edbbf262a6be",
+    "flags": 1,
+    "operationName": "HTTP GET",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "651a761d8582def0"
+      }
+    ],
+    "startTime": 1619955926766642,
+    "duration": 54198,
+    "tags": [
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "0.0.0.0:8083"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "net/http.reused",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "net/http.was_idle",
+        "type": "bool",
+        "value": true
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926766709,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GetConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926766716,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926766738,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteHeaders"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926766741,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "WroteRequest"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926820739,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "GotFirstResponseByte"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926820777,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "PutIdleConn"
+          }
+        ]
+      },
+      {
+        "timestamp": 1619955926820839,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "ClosedBody"
+          }
+        ]
+      }
+    ],
+    "processID": "p2",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "689bcebc70396842",
+    "flags": 1,
+    "operationName": "GetDriver",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "06a2aadb2d5cf26d"
+      }
+    ],
+    "startTime": 1619955926524435,
+    "duration": 11762,
+    "tags": [
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "param.driverID",
+        "type": "string",
+        "value": "T714190C"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "client"
+      }
+    ],
+    "logs": [],
+    "processID": "p1",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "3342b9a62f5ade4d",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "4172439894837d1e"
+      }
+    ],
+    "startTime": 1619955926668447,
+    "duration": 48566,
+    "tags": [
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      },
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=340%2C276"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926668458,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=340%2C276"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  },
+  {
+    "traceID": "1c7f074c87afb51c",
+    "spanID": "71ec6f3bffe4c331",
+    "flags": 1,
+    "operationName": "HTTP GET /route",
+    "references": [
+      {
+        "refType": "CHILD_OF",
+        "traceID": "1c7f074c87afb51c",
+        "spanID": "33323a922115fe82"
+      }
+    ],
+    "startTime": 1619955926632115,
+    "duration": 45176,
+    "tags": [
+      {
+        "key": "component",
+        "type": "string",
+        "value": "net/http"
+      },
+      {
+        "key": "http.method",
+        "type": "string",
+        "value": "GET"
+      },
+      {
+        "key": "http.status_code",
+        "type": "int64",
+        "value": 200
+      },
+      {
+        "key": "http.url",
+        "type": "string",
+        "value": "/route?dropoff=211%2C653&pickup=694%2C192"
+      },
+      {
+        "key": "internal.span.format",
+        "type": "string",
+        "value": "proto"
+      },
+      {
+        "key": "span.kind",
+        "type": "string",
+        "value": "server"
+      }
+    ],
+    "logs": [
+      {
+        "timestamp": 1619955926632128,
+        "fields": [
+          {
+            "key": "event",
+            "type": "string",
+            "value": "HTTP request received"
+          },
+          {
+            "key": "level",
+            "type": "string",
+            "value": "info"
+          },
+          {
+            "key": "method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "url",
+            "type": "string",
+            "value": "/route?dropoff=211%2C653&pickup=694%2C192"
+          }
+        ]
+      }
+    ],
+    "processID": "p3",
+    "warnings": null
+  }
+]

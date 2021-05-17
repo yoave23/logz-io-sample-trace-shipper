@@ -1,4 +1,4 @@
-const { span1, span2, span3, span4, operation1, operation2 } = require('./data1-complete');
+const { span1, span2, span3, span4, operation1, operation2, operation3, operation4, operation5, operation6, operation7, operation8, operation9 } = require('./data1-complete');
 
 const generateTraces = () => {
   // first trace
@@ -19,7 +19,7 @@ const generateTraces = () => {
   span4.startTimeMillis = span4['@timestamp'] = span4Time;
   span4.startTime = parseInt(`${span4Time}000`, 10);
 
-  return [operation1, operation2, span1, span2, span3, span4].map(body => ({ amount: 1, body }));
+  return [operation1, operation2, operation3, operation4, operation5, operation6, operation7, operation8, operation9, span1, span2, span3, span4].map(body => ({ amount: 1, body }));
 };
 
 module.exports = { generateTraces };
